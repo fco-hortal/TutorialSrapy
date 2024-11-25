@@ -1,13 +1,6 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
+# items.py
 
 import scrapy
-
-
-def serialize_price(value):
-    return f'$ {str(value)}'
 
 class BookItem(scrapy.Item):
    url = scrapy.Field()
